@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour
 		// posH finds if user inputs left and right
         float posH = Input.GetAxis("HorizontalL");
 
-        Debug.Log(angle_vertical);
+        //Debug.Log(angle_vertical);
 
         if ((posV == 0 && posH == 0) || angle_vertical == 0.0) angle_vertical = cameraEye.transform.localEulerAngles.y * Math.PI / 180;
         double x_vertical = calculateNewPosition(angle_vertical).Item1;
